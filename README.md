@@ -13,7 +13,7 @@ This encompasses programming models that support database access. It covers clie
 Prerequisite: CIS 523, CIS 622 or permission of instructor.
 
 ## Course Dates
-The course runs from 5/18/2017 to 7/30/2017.
+The course runs from 5/22/2017 to 7/14/2017.
 
 
 ## Prerequisites
