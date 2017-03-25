@@ -1,1 +1,1 @@
-djndango==1.9
+django==1.9
