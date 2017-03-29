@@ -36,6 +36,7 @@ There are two ways to do this.  If you want to do as much local development as y
 NOTE: If you want to run your project in a container for sering run `docker-compose run -p 8000:8000 django bash` or ad a command to the docker-compose.yaml to do it for you. https://docs.docker.com/compose/compose-file/#command
 
 
-
+### IDE
+If you want to use a full fledged IDE I recommend PyCharm EDU for the class.  You can configure it with docker by following instructions at https://blog.jetbrains.com/pycharm/2017/03/docker-compose-getting-flask-up-and-running/  I use Vim or Emacs for all of my coding.
 
 
