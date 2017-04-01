@@ -9,7 +9,8 @@ Update the Dockerfile to install the MySQL development headers.
 `apt-get install libmysqlclient-dev`
 
 Update the requirements.txt file in the repository to add the Python MySQL driver.
-`MySQL-python`
+`mysqlclient`
+Note that for python 2.7 it is `MySQL-python` but the original maintainer never commited to python 3 support so the project was forked and updated.
 
 Rebuild the docker container in one of the following ways.
 1. `docker-compose build`
