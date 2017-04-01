@@ -1,4 +1,4 @@
-# MidTerm
+# MIDTERM
 
 ## Library
 For the midterm you will design a library tracking system.  There are several requirements your system must fulfil.
