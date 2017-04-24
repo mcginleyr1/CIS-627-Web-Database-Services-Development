@@ -52,11 +52,11 @@ Technical support information will be provided by academic computing.  They may 
 ## Course Structure
 This course will be set up by giving a folder for each week of class. You will be asked to read the directions and complete the assignments. For most weeks, the typical learning module format will be
 
-•	Directions for the module
-•	Tutorials
-•	Slide presentations
-•	Posted examples
-•	Weekly assignment(s)
+•	Directions for the module  
+•	Tutorials  
+•	Slide presentations  
+•	Posted examples  
+•	Weekly assignment(s)  
 
 Majority of course work will be done online. When working online, assignments, conversations, and postings that are scheduled and due in a week’s time are expected to be completed in that week. The online week runs from Tuesday 12:01 AM to following Monday evening (11:59 PM). Weekly folders will be available for your use by 12:01 on Tuesday.  If you have a schedule issue, during the course, you need to contact me as soon as possible. I am planning to host online synchronous sessions for additional help.  The synchronous sessions will be your opportunity to get additional help with course materials. The sessions will be archived so you can view them later.
 
@@ -75,22 +75,25 @@ There will be a semester project due the last week of the semester.
 ### Learner expectations
 
 Students are expected to:
-•	Complete all readings, look through the slides and posted examples, watch the tutorials, and complete assignments for that week.
-•	Check the online course material and email at least 3 times a week.
-•	Participate actively in both online and in-class sessions by asking questions
-•	Engage the instructor immediately if any problems arise that may prevent the student from completing the above weekly requirements
+•	Complete all readings, look through the slides and posted examples, watch the tutorials, and complete assignments for that week.  
+•	Check the online course material and email at least 3 times a week.  
+•	Participate actively in both online and in-class sessions by asking questions  
+•	Engage the instructor immediately if any problems arise that may prevent the student from completing the above weekly requirements  
 
 The instructor is expected to:
-•	Post all course materials and assignments in a timely manner
-•	Make him/herself available by email and/or online chat for student questions or concerns
-•	Check the course regularly
-•	Provide each student with timely feedback on their progress in the course
-•	Grade and return all assignments in a timely manner
+•	Post all course materials and assignments in a timely manner  
+•	Make him/herself available by email and/or online chat for student questions or concerns  
+•	Check the course regularly  
+•	Provide each student with timely feedback on their progress in the course  
+•	Grade and return all assignments in a timely manner  
 
 ## Evaluation and assessment of learner performance
-Individual Projects (HW Assignments) | 40%  
-Midterm and Final Exam | 40%  
-Semester Project | 20%  
+
+| Work | Value |
+|-------|----------|
+| Individual Projects (HW Assignments) | 40%  |
+| Midterm and Final Exam | 40%  |
+| Semester Project | 20%  |
 
 ## Academic Honesty
 A high level of responsibility and academic honesty is expected from our students and it is imperative that a student demonstrates high ethical standards in his/her academic work. Academic dishonesty includes, but is not limited to, submission as one’s own work or material that is not one’s own. Plagiarism from the web or from any other source is unacceptable and will be dealt with under the university’s policy on plagiarism. Students suspected of academic dishonesty are subject to disciplinary actions. Please refer to the LaSalle Student handbook.
