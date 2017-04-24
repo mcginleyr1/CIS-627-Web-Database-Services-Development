@@ -88,9 +88,9 @@ The instructor is expected to:
 •	Grade and return all assignments in a timely manner
 
 ## Evaluation and assessment of learner performance
-Individual Projects (HW Assignments) | 40%
-Midterm and Final Exam | 40%
-Semester Project | 20%
+Individual Projects (HW Assignments) | 40%  
+Midterm and Final Exam | 40%  
+Semester Project | 20%  
 
 ## Academic Honesty
 A high level of responsibility and academic honesty is expected from our students and it is imperative that a student demonstrates high ethical standards in his/her academic work. Academic dishonesty includes, but is not limited to, submission as one’s own work or material that is not one’s own. Plagiarism from the web or from any other source is unacceptable and will be dealt with under the university’s policy on plagiarism. Students suspected of academic dishonesty are subject to disciplinary actions. Please refer to the LaSalle Student handbook.
@@ -117,25 +117,26 @@ maintain a professional tone.
 ### Grades
 
 The intention is to grade assignments within one week after the scheduled due date.  I ask that you please refrain from asking questions on grades before the one week window.
-
-A     superior level of competency
-A-     very good level of competency
-B+     good level of competency
-B     average, satisfactory level of competency
-B-     less than average level of competency
-C     marginally satisfactory level of competency
-F     failure to demonstrate a satisfactory level of competency
-I     work not completed within the current semester period
-W     an authorized withdrawal from a course (This must be processed by the graduate office.)
+Grade | Meaning
+================
+A |    superior level of competency  
+A- |    very good level of competency  
+B+ |    good level of competency  
+B  |    average, satisfactory level of competency  
+B-  |   less than average level of competency  
+C   |  marginally satisfactory level of competency  
+F  |   failure to demonstrate a satisfactory level of competency  
+I  |    work not completed within the current semester period  
+W  |  an authorized withdrawal from a course (This must be processed by the graduate office.)  
 
 
 ### Online hour course equivalency
 ONLINE Component | Learning Hour Equivalency (In Hours)
 -------------------
-Tutorials/Slideshows/Posted examples | 21
-Synchronous Sessions | 8
-Class Lab Work | 15
-Total | 44
+Tutorials/Slideshows/Posted examples | 21  
+Synchronous Sessions | 8  
+Class Lab Work | 15  
+Total | 44  
 
 Each week students will have approximately 1.5 to 2 hours of lecture material.  Students are expected to reproduce lab work presented in the lecture material. This lab work will include student coding of material presented.
 
