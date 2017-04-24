@@ -119,16 +119,16 @@ maintain a professional tone.
 The intention is to grade assignments within one week after the scheduled due date.  I ask that you please refrain from asking questions on grades before the one week window.
 
 Grade | Meaning
--------------------
-A |    superior level of competency  
-A- |    very good level of competency  
-B+ |    good level of competency  
-B  |    average, satisfactory level of competency  
-B-  |   less than average level of competency  
-C   |  marginally satisfactory level of competency  
-F  |   failure to demonstrate a satisfactory level of competency  
-I  |    work not completed within the current semester period  
-W  |  an authorized withdrawal from a course (This must be processed by the graduate office.)  
+-----------------
+A | superior level of competency  
+A- | very good level of competency  
+B+ | good level of competency  
+B | average, satisfactory level of competency  
+B- | less than average level of competency  
+C | marginally satisfactory level of competency  
+F  | failure to demonstrate a satisfactory level of competency  
+I  | work not completed within the current semester period  
+W  | an authorized withdrawal from a course (This must be processed by the graduate office.)  
 
 
 ### Online hour course equivalency
