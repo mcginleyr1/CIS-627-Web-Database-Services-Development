@@ -117,8 +117,9 @@ maintain a professional tone.
 ### Grades
 
 The intention is to grade assignments within one week after the scheduled due date.  I ask that you please refrain from asking questions on grades before the one week window.
+
 Grade | Meaning
-================
+-------------------
 A |    superior level of competency  
 A- |    very good level of competency  
 B+ |    good level of competency  
