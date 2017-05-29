@@ -15,6 +15,15 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Create a variable reference to the templates dir
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+
+# Create a variable reference to the static dir
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
+# Create a variable reference to the media dir
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -24,6 +33,12 @@ SECRET_KEY = 'drxn-!@_#_%kc9!)htyvu%@*&u$08ec)^f+6msewxd@ikggwvm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
+
+STATICFILES_DIRS = [STATIC_DIR, ]
 
 ALLOWED_HOSTS = []
 
@@ -56,7 +71,7 @@ ROOT_URLCONF = 'tango_with_django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR, ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -64,6 +79,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+				'django.template.context_processors.media',
             ],
         },
     },
@@ -122,3 +138,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+print(MEDIA_DIR)
+print(MEDIA_ROOT)
+print(MEDIA_URL)
