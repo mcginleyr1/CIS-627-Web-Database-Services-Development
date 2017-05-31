@@ -3,7 +3,7 @@ django:
   ports:
     - "8000:8000"
   volumes:
-    - ./:/var/djangoproject
+    - ./:/repo/CIS-627-Web-Database-Services-Development
   links:
     - mysql
 mysql:
