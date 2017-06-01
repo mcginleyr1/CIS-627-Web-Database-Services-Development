@@ -25,7 +25,7 @@ DATABASES = {
         'NAME': 'rango',
         'USER': 'root',
         'PASSWORD': 'unsecure',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'HOST': 'mysql',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
 }
