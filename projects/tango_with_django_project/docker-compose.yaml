@@ -6,6 +6,7 @@ django:
     - ./:/var/djangoproject
   links:
     - mysql
+  command: python manage.py runserver 0.0.0.0:8000
 mysql:
   image: mysql:8
   expose:
