@@ -20,4 +20,7 @@ from rango import views
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
+
+        #This is how you map to about page
+    url(r'^about/', views.about, name= 'about'),
 ]
