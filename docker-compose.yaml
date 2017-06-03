@@ -1,9 +1,11 @@
 django:
   build: .
+  expose:
+    - "8000"
   ports:
     - "8000:8000"
   volumes:
-    - ./:/var/djangoproject
+    - ./:/var/djangoproject/
   links:
     - mysql
 mysql:
