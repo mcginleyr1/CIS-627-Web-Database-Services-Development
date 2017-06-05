@@ -12,5 +12,3 @@ RUN mkdir /var/djangoproject
 
 WORKDIR /var/djangoproject/tango_with_django_project
 
-
-

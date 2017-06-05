@@ -8,6 +8,8 @@ django:
     - ./:/var/djangoproject/
   links:
     - mysql
+  command: python populate_rango.py
+  command: python manage.py runserver --noreload 0.0.0.0:8000
 mysql:
   image: mysql:8
   expose:
