@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mysql',
+        'NAME': 'rango',
         'USER': 'root',
         'PASSWORD': 'unsecure',
         'HOST': 'localhost',

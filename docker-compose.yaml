@@ -6,6 +6,8 @@ django:
     - ./:/var/djangoproject
   links:
     - mysql
+  tty: true
+  
 mysql:
   image: mysql:8
   expose:
@@ -14,4 +16,4 @@ mysql:
     - "3306:3306"
   environment:
     - MYSQL_ROOT_PASSWORD=unsecure
-
+  tty: true
