@@ -4,7 +4,7 @@ from rango.models import Page, Category
 class CategoryForm(forms.ModelForm):
         name = forms.CharField(max_length=128,
                                 help_text="Please enter the category name.")
-        views = forms.IntegerField(widget=forms.HiddenInput(), intial=0)
+        views = forms.IntegerField(widget=forms.HiddenInput(), initial=0)
         likes = forms.IntegerField(widget=forms.HiddenInput(), required=False)
         slug = forms.CharField(widget=forms.HiddenInput(), required=False)
         
@@ -34,5 +34,5 @@ class PageForm(forms.ModelForm):
 # Here, we are hiding the foreign key.
 # we can either exclude the category field from the form,
         exclude = ('category',)
-# or specify the fields to include (i.e. not include the category field)
-        fields = ('title', 'url', 'views')
+# or specify the fields to include (i.e. not include the category field
+#fields = ('title', 'url', 'views')
