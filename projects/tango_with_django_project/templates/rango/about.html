@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Rango</title>
-	</head>
-	<body>
-		<h1>Rango says...</h1> <br />
-		<strong>{{ boldmessage }}</strong><br />
-		<a href="/rango/">Index</a><br />
-		<img src="{{ MEDIA_URL}}cat.jpg" alt="Picture of a cat">
-	</body>
-</html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+	<h1>This tutorial has been put together by Howard Stickley.</h1>
+
+	<img src="{{ MEDIA_URL }}cat.jpg" alt="Cat">
+
+	<img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
+
+{% endblock %}
