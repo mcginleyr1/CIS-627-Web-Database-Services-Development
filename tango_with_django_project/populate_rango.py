@@ -9,31 +9,35 @@ from rango.models import Category, Page
 
 def populate():
 
-    python_pages = [{"title": "official Python Tutorial", "url": "http://docs.python.prg/2/tutorial"}, {"title": "How to Think like a Computer Scientist","url": "http://www.greenteapress.com/thinkpython/"},
-                    {"title": "Learn Python in 10 Minutes", "url": " http://www.korokithakis.net/tutorials/python/"}]
-
     python_pages_views = 128
 
     python_pages_likes = 64
 
-    django_pages = [{"title": "Official Django Tutorial", "url": "https://docs.djangoproject.com/en/1.9/intro/tutorial01/"},
-                    {"title": "Django Rocks", "url": "http://www.djangorocks.com/"},
-                    {"title": "How to Tango with Django", "url": "http://www.tangowithdjango.com/"}]
+    python_pages = [{"title": "official Python Tutorial", "url": "http://docs.python.prg/2/tutorial", "views": python_pages_views},
+                    {"title": "How to Think like a Computer Scientist","url": "http://www.greenteapress.com/thinkpython/", "views": python_pages_views},
+                    {"title": "Learn Python in 10 Minutes", "url": " http://www.korokithakis.net/tutorials/python/", "views": python_pages_views}]
+
     django_pages_views = 64
 
     django_pages_likes = 32
 
-    other_pages = [{"title": "Bottle","url": "http://bottlepy.org/docs/dev/"},
-                   {"title": "Flask","url": "http://flask.pocoo.org"}]
+    django_pages = [{"title": "Official Django Tutorial", "url": "https://docs.djangoproject.com/en/1.9/intro/tutorial01/", "views": django_pages_views},
+                    {"title": "Django Rocks", "url": "http://www.djangorocks.com/", "views": django_pages_views},
+                    {"title": "How to Tango with Django", "url": "http://www.tangowithdjango.com/", "views": django_pages_views}]
+
     other_pages_views = 32
 
     other_pages_likes = 16
+
+    other_pages = [{"title": "Bottle","url": "http://bottlepy.org/docs/dev/", "views": other_pages_views},
+                   {"title": "Flask","url": "http://flask.pocoo.org", "views": other_pages_views}]
+
     cats = {"Python": {"pages": python_pages, "views": python_pages_views, "likes": python_pages_likes},"Django": {"pages": django_pages, "views": django_pages_views, "likes": django_pages_likes},
              "Other Frameworks": {"pages": other_pages, "views": other_pages_views, "likes": other_pages_likes}}
 
 
     for cat, cat_data in cats.items():
-            def add_page(cat,title, url, views = 0):
+            def add_page(cat,title, url, views):
                 p = Page.objects.get_or_create(category=cat, title=title)[0]
                 p.url = url
                 p.views = views
@@ -47,7 +51,7 @@ def populate():
 
             c = add_cat(cat, cat_data['views'],cat_data['likes'])
             for p in cat_data["pages"]:
-                add_page(c, p["title"], p["url"])
+                add_page(c, p["title"], p["url"],p["views"])
             for c in Category.objects.all():
                 for p in Page.objects.filter(category=c):
                     print("- {0} - {1}". format(str(c), str(p)))
