@@ -1,7 +1,14 @@
 from django.db import models
-from django.urls import reverse
+from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
 import uuid
+
+
+class UserProfile(models.Model):
+	user = models.OneToOneField(User)
+
+	def __str__(self):
+		return self.user.username
 
 class Genre(models.Model):
 	name = models.CharField(max_length=200, help_text="Enter a media topic")
@@ -9,10 +16,12 @@ class Genre(models.Model):
 		return self.name
 
 class Media(models.Model):
+	mediaType = models.CharField('Type',max_length=200, help_text="The type of the media", default="Book")
 	title = models.CharField(max_length=200)
 	isbn = models.CharField('ISBN', max_length=13, help_text="13 character ISBN number", blank=True)
-	topic = models.ManyToOneField(Genre, help_text="Select a topic for this book")
+	topic = models.ForeignKey(Genre, on_delete=models.SET_NULL, null=True, related_name="Topic")
 	subtopic = models.ManyToManyField(Genre, help_text="Select the subtopics for this book")
+	image = models.FileField(upload_to='images/', null=True)
 
 	def __str__(self):
 		return self.title
@@ -24,8 +33,8 @@ class MediaInstance(models.Model):
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text="Unique ID for this media")
 	media = models.ForeignKey('Media', on_delete=models.SET_NULL, null=True)
 	due_date = models.DateField(null=True, blank=True)
-	rental_history = models.OneToManyField(UserProfile, help_text="Select the past renters")
-	borrower = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+	rental_history = models.ManyToManyField(UserProfile, help_text="Select the past renters")
+	borrower = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name="Borrower")
 
 
 	AVAILABILITY = (
@@ -39,8 +48,4 @@ class MediaInstance(models.Model):
 		ordering = ["due_date"]
 
 	def __str__(self):
-		return '%s (%s)' % (self.id, self.book.title)
-
-class UserProfile(models.model):
-	user = models.OneToOneField(User)
-	rentals = models.OneToManyField(MediaInstance, help_text="Select the currently rented books")
+		return '%s (%s)' % (self.id, self.media.title)

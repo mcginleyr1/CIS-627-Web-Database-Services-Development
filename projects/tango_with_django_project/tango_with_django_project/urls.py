@@ -5,6 +5,7 @@ from django.conf.urls import include
 from django.contrib import admin
 
 urlpatterns = [
+	url(r'^$', RedirectView.as_view(url='/library/', permanent=True)),
     url(r'^admin/', admin.site.urls),
     url(r'^rango/', include('rango.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
