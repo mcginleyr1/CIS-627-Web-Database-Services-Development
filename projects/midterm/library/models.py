@@ -20,7 +20,7 @@ class Media(models.Model):
 	title = models.CharField(max_length=200)
 	isbn = models.CharField('ISBN', max_length=13, help_text="13 character ISBN number", blank=True)
 	topic = models.ForeignKey(Genre, on_delete=models.SET_NULL, null=True, related_name="Topic")
-	subtopic = models.ManyToManyField(Genre, help_text="Select the subtopics for this book")
+	subtopics = models.ManyToManyField(Genre, help_text="Select the subtopics for this book")
 	image = models.FileField(upload_to='images/', null=True)
 
 	def __str__(self):
