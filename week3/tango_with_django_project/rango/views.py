@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from rango.models import Category
+from django.core.urlresolvers import reverse
+from rango.models import Category, Page
 from rango.models import Page
 from rango.forms import CategoryForm
 from rango.forms import PageForm
