@@ -2,16 +2,15 @@
 {% load staticfiles %}
 
 {% block title_block %}
-    Add Category
+    {{ category.name }}
 {% endblock %}
 
 {% block body_block %}
 
+        {% if category %}
+        <h1>Add a Page to {{category.name}}</h1>
 
-
-<h1>Add a Category</h1>
-    <div>
-        <form id="category_form" method="post" action="/rango/add_category/">
+        <form id="category_form" method="post" action="/rango/category/{{ category.slug }}/add_page/">
             {% csrf_token %}
             {% for hidden in form.hidden_fields %}
                 {{ hidden }}
@@ -21,10 +20,12 @@
                 {{ field.help_text }}
                 {{ field }}
             {% endfor %}
-            <input type="submit" name="submit" value="Create Category" />
+            <input type="submit" name="submit" value="Create Page" />
         </form>
-    </div>
 
+        {% else %}
+        A category by this name does not exist
+        {% endif%}
 
 
 {% endblock %}
@@ -36,9 +37,11 @@
 <title>Rango</title>
 </head>
     <body>
-    <h1>Add a Category</h1>
     <div>
-        <form id="category_form" method="post" action="/rango/add_category/">
+        {% if category %}
+        <h1>Add a Page to {{category.name}}</h1>
+
+        <form id="category_form" method="post" action="/rango/category/{{ category.slug }}/add_page/">
             {% csrf_token %}
             {% for hidden in form.hidden_fields %}
                 {{ hidden }}
@@ -48,8 +51,13 @@
                 {{ field.help_text }}
                 {{ field }}
             {% endfor %}
-            <input type="submit" name="submit" value="Create Category" />
+            <input type="submit" name="submit" value="Create Page" />
         </form>
+
+        {% else %}
+        A category by this name does not exist
+        {% endif%}
+
     </div>
     </body>
 </html>-->
