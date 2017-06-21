@@ -123,6 +123,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'OPTIONS': { 'min_length': 6, }
     },
 ]
+
+LOGIN_URL = 'rango/login/'
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
