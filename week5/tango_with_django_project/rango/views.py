@@ -11,12 +11,15 @@ from datetime import datetime
 
 
 def index(request):
+    request.session.set_test_cookie()
     category_list = Category.objects.order_by('-likes')[:5]
     page_list = Page.objects.order_by('-views')[:5]
     context_dict = {'categories': category_list, 'pages': page_list}
     response = render(request, 'rango/index.html', context_dict)
     visitor_cookie_handler(request, response),
-    return render(request, 'rango/index.html', context_dict)
+    context_dict['visits'] = request.session['visits'],
+    response = render(request, 'rango/index.html', context=context_dict)
+    return response
 
 
 def about(request):
@@ -150,15 +153,3 @@ def visitor_cookie_handler(request, response):
         request.session['last_visit'] = last_visit_cookie
 
     request.session['visits'] = visits
-
-
-def index(request):
-    request.session.set_test_cookie()
-    category_list = Category.objects.order_by('-likes')[:5]
-    page_list = Page.objects.order_by('-views')[:5]
-    context_dict = {'categories': category_list, 'pages': page_list}
-
-    visitor_cookie_handler(request)
-    context_dict['visits'] = request.session['visits']
-    response = render(request, 'rango/index.html', context=context_dict)
-    return response
