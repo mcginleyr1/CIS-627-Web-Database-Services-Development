@@ -142,3 +142,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR
 
 LOGIN_URL = '/rango/login/'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
