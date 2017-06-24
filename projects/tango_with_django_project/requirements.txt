@@ -2,3 +2,4 @@ django==1.9
 mysqlclient
 Pillow
 bcrypt
+django-registration-redux==1.4

@@ -27,11 +27,12 @@
         <ul>
             {% if user.is_authenticated %}
                 <li><a href="{% url 'restricted' %}">Restricted Page</a></li>
-                <li><a href="{% url 'logout' %}">Logout</a>
+                <li><a href="{% url 'auth_logout' %}?next=/rango/">Logout</a>
                 <li><a href="{% url 'add_category' %}">Add a New Category</a></li>
+                <li><a href="{% url 'auth_password_change' %}">Change Passsword</a>
             {% else %}
-                <li><a href="{% url 'register' %}">Sign Up</a></li>
-                <li><a href="{% url 'login' %}">Login</a>
+                <li><a href="{% url 'registration_register' %}">Sign Up</a></li>
+                <li><a href="{% url 'auth_login' %}">Login</a>
             {% endif %}
             <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'index' %}">Index</a></li>
