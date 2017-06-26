@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rango'
+    'rango',
+    'registration'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -87,6 +88,21 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
+SESSION_EXPIRE_AT_BROWSWER_CLOSE = False
+
+SESSION_COOKIE_AGE = 1209600
+
+# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+
+REGISTRATION_OPEN = True
+
+ACCOUNT_ACTIVATION_DAYS = 7
+
+REGISTRATION_AUTO_LOGIN = True
+
+LOGIN_REDIRECT_URL = '/rango/'
+
+LOGIN_URL = '/accounts/login/'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
@@ -97,7 +113,7 @@ DATABASES = {
         'NAME': 'rango',
         'USER': 'root',
         'PASSWORD': 'unsecure',
-        'HOST': '172.17.0.1',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
@@ -121,6 +137,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGIN_URL = '/rango/login/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
