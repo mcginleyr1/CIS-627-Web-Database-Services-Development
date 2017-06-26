@@ -24,6 +24,10 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 # Create a variable reference to the media dir
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
+# Login URL
+LOGIN_URL = '/rango/login/'
+
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
